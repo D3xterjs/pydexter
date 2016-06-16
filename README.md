@@ -11,6 +11,7 @@ $ bower install d3xter
 $ pip install pydexter
 $ python
 >>> from PyDexter import PyDexter
+>>> pydex = PyDexter()
 ```
 
 ## API & Examples
