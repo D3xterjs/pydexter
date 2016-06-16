@@ -8,7 +8,7 @@ Simple plotting for Python. Python wrapper for D3xter - render charts in the bro
 
 ```
 $ bower install d3xter
-$ pip install pydexter
+$ pip install PyDexter
 $ python
 >>> from PyDexter import PyDexter
 >>> pydex = PyDexter()
