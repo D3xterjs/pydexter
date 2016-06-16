@@ -1,6 +1,6 @@
 # PyDexter
 
-Simple plotting for Python. Render charts in the browser with simple Python syntax.
+Simple plotting for Python. Python wrapper for D3xter - render charts in the browser with simple Python syntax.
 
 ![Examples](https://raw.githubusercontent.com/D3xterjs/pydexter/master/examples.png)
 
