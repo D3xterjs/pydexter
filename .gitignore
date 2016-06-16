@@ -1,6 +1,5 @@
-README.md
 .DS_Store
-__pycache__
+*__pycache__
 bower_components
 *.html
 test.py

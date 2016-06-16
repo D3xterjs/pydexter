@@ -1,7 +1,7 @@
 import os
 import webbrowser
 
-class Dexter:
+class PyDexter:
     def __init__(self, config = {}):
         self.config = config
 
@@ -67,7 +67,7 @@ class Dexter:
         return tail
 
     def _write_file(self, html, path = None):
-        if path is None: path = "./my_plot.html"
+        if path is None: path = "./pydex_plot.html"
         f = open(path, 'w')
         f.write(html)
         f.close()
