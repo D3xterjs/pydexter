@@ -3,3 +3,4 @@
 bower_components
 *.html
 test.py
+test_result.txt
