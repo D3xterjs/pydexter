@@ -1,5 +1,6 @@
 import os
 import webbrowser
+import numpy as np
 
 class PyDexter:
     def __init__(self, config = {}):
@@ -32,10 +33,20 @@ class PyDexter:
         self.plot({ 'datasets': [dataset] })
 
     def _launch_chart(self, chart_type, config):
+        config = self._sanitize_config(config)
         js = self._make_js(chart_type, config)
         html = self._html_head() + js + self._html_tail()
         path = self._write_file(html)
         self._open_file(path)
+
+    def _sanitize_config(self, config):
+        if type(config) is dict:
+            s = str(config)
+            s = s.replace("array", "").replace("(", "").replace(")", "")
+        else:
+            s = str(list(config))
+        
+        return s
 
     def _make_js(self, chart_type, config):
         js = 'document.addEventListener("DOMContentLoaded", function(event) {{ new D3xter({0}).{1}({2}); }});\n'.format(
