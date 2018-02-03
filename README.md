@@ -21,7 +21,7 @@ $ python
 import numpy as np
 
 nums = np.random.rand(1000)
-pydex.hist(list(nums))
+pydex.hist(nums)
 ```
 
 ### Scatter
@@ -47,8 +47,8 @@ pydex.plot({
   'labels': ['some points', 'a line'],
   'datasets': [
     {
-      'x': list(range(100)),
-      'y': list(np.random.rand(100)),
+      'x': range(100),
+      'y': np.random.rand(100),
     },
     {
       'x': [0, 99],
