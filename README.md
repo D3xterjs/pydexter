@@ -7,7 +7,6 @@ Simple plotting for Python. Python wrapper for D3xter - render charts in the bro
 ## Setup
 
 ```
-$ bower install d3xter
 $ pip install PyDexter
 $ python
 >>> from PyDexter import PyDexter
