@@ -47,7 +47,7 @@ pydex.plot({
   'labels': ['some points', 'a line'],
   'datasets': [
     {
-      'x': range(100),
+      'x': list(range(100)),
       'y': np.random.rand(100),
     },
     {
